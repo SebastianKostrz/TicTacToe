@@ -5,12 +5,6 @@ Designed to demonstrate my understanding of modern frontend development principl
 
 ---
 
-## 🚀 Live Demo
-
-> (Optional: Add deployment link here, e.g. Netlify/Vercel)
-
----
-
 ## 🧠 Key Highlights
 
 - ✨ Built entirely with **React**
