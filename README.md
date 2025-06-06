@@ -112,7 +112,7 @@ Creates an optimized build in the `/build` directory.
 
 ## 👤 About Me
 
-**Sebastian Kostrzewa**  
+**Sebastian Kostrz**  
 Junior Frontend Developer  
 [GitHub](https://github.com/SebastianKostrz)
 
