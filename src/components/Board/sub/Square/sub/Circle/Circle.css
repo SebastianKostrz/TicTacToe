@@ -1,0 +1,8 @@
+.circle{
+    height: 40%;
+    /*width: 80%;*/
+    aspect-ratio: 1;
+    border: 15px solid #F2B236;
+    border-radius: 100%;
+
+}

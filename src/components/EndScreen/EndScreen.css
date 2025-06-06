@@ -1,0 +1,172 @@
+#end-screen-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#end-screen-bar {
+    width: 100%;
+    height: 25%;
+    background: #1F3641;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-label {
+    color: #A8BFC9;
+    height: 15%;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#winner-label {
+    height: 50%;
+    width: 40%;
+    font-size: 3em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+#tie-label{
+    height: 50%;
+    width: 40%;
+    font-size: 3em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #31C3BD;
+}
+
+#circle-winner,
+#cross-winner {
+    height: 80%;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+#circle-winner::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    border: 20px solid #F2B137;
+    box-sizing: border-box;
+}
+
+#cross-winner::before,
+#cross-winner::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    border: 15px solid #31C3BD;
+    border-radius: 10px;
+    top: 0;
+    left: 30%;
+    box-sizing: border-box;
+}
+
+#cross-winner::before {
+    transform: rotate(45deg);
+}
+
+#cross-winner::after {
+    transform: rotate(-45deg);
+}
+
+#end-screen-bttn-container {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+#quit-bttn,
+#next-round-bttn {
+    height: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#quit-bttn {
+    width: 10%;
+    background-color: #6B8997;
+    color: #1A2A33;
+}
+
+#quit-bttn:hover::before {
+    background-color: #DBE8ED;
+}
+
+#quit-bttn::before,
+#next-round-bttn::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -10%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#quit-bttn::before {
+    background-color: #A8BFC9;
+    content:'QUIT'
+}
+
+#next-round-bttn {
+    width: 15%;
+    background-color: #CC8B13;
+    color: #1A2A33;
+}
+
+#next-round-bttn:hover::before {
+    background-color: #FFC860;
+}
+
+#next-round-bttn::before {
+    background-color: #F2B137;
+    content:'NEXT ROUND '
+}
+
+#next-round-bttn:active::before,
+#quit-bttn:active::before {
+    top: -5%;
+}
+
+
+@media (max-width: 768px){
+    #winner-label{
+        width: 100%;
+    }
+    #quit-bttn{
+        width: 40%;
+    }
+    #next-round-bttn{
+        width: 40%;
+    }
+}

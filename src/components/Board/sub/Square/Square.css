@@ -1,0 +1,16 @@
+.square-container {
+    width: 90%;
+    height: 90%;
+    background-color: #1F3540;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    -webkit-box-shadow: 0px 10px 0px 0px #102129;
+    -moz-box-shadow: 0px 10px 0px 0px #102129;
+    box-shadow: 0px 10px 0px 0px #102129;
+    transition: all 0.3s ease-in-out;
+}
+

@@ -1,0 +1,77 @@
+#win {
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    border-top: 15px solid whitesmoke;
+    height: 1px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: width .3s ease-in-out;
+    transform-origin: left center;
+    z-index: 2;
+
+}
+
+.horizontal{
+    left: 10% !important;
+    width: 80% !important;
+    opacity: 1 !important;
+}
+
+.vertical{
+    transform: rotate(90deg);
+    top: 10% !important;
+    width: 80% !important;
+    opacity: 1 !important;
+}
+
+.diagonal{
+    width: 130% !important;
+    /*top: 4% !important;*/
+    left: 4% !important;
+    opacity: 1 !important;
+}
+
+.top{
+    top: 16.5% !important;
+}
+
+.mid{
+    top:49% !important;
+}
+
+.bottom{
+    top:83.5% !important;
+}
+
+.left{
+    left:17% !important;
+}
+
+.middle{
+    left:50% !important;
+}
+
+.right{
+    left:83% !important;
+}
+
+.normal{
+    transform: rotate(45deg);
+    top: 4% !important;
+}
+
+.reverted{
+    transform: rotate(-45deg);
+    top: 96% !important;
+}
+
+
+
+
+
+/*horizontal: top: 17, 50, 83 left: 10% width: 80%*/
+/*vertical: top: 50, left: -23, 10,  43 width: 80%*/
+/*diagonal: 45deg: top: 50%, left: -10% width: 120%*/
+/*diagona: -45deg: top: 50%, left: -10% width: 120%*/

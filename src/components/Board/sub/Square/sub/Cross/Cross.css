@@ -1,0 +1,25 @@
+.cross{
+    height: 80%;
+    width: 80%;
+    position: relative;
+}
+
+.cross::before,
+.cross::after{
+    position: absolute;
+    content: '';
+    border-top: 15px solid #31C4BE;
+    border-radius: 15px;
+    width: 80%;
+    left: 10%;
+    top: 50%;
+
+}
+
+.cross::before{
+    transform: rotate(45deg);
+}
+
+.cross::after{
+    transform: rotate(-45deg);
+}
