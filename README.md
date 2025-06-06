@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# 🎯 Tic Tac Toe – React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple yet clean and fully responsive Tic Tac Toe game built in **React**.  
+Designed to demonstrate my understanding of modern frontend development principles: component-based architecture, React state management, and clean UI/UX design.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+> (Optional: Add deployment link here, e.g. Netlify/Vercel)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Key Highlights
 
-### `npm test`
+- ✨ Built entirely with **React**
+- ⚙️ Game logic handled through `useState` hooks
+- 🧩 Easily extendable architecture
+- 📱 Mobile-first responsive layout
+- 🎯 Win/draw detection
+- 🔄 Game reset functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React (JavaScript)**
+- **HTML5 + CSS3**
+- **Node.js + npm**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```
+TicTacToe/
++---public
+|       icon-restart.svg
+|       index.html
+|       manifest.json
+|       robots.txt
+|
+\---src
+    |   App.css
+    |   App.js
+    |   index.css
+    |   index.js
+    |
+    \---components
+        +---Board
+        |   |   Board.css
+        |   |   Board.js
+        |   |
+        |   \---sub
+        |       +---Square
+        |       |   |   Square.css
+        |       |   |   Square.js
+        |       |   |
+        |       |   \---sub
+        |       |       +---Circle
+        |       |       |       Circle.css
+        |       |       |       Circle.js
+        |       |       |
+        |       |       \---Cross
+        |       |               Cross.css
+        |       |               Cross.js
+        |       |
+        |       \---Win
+        |               Win.css
+        |               Win.js
+        |
+        +---EndScreen
+        |       EndScreen.css
+        |       EndScreen.js
+        |
+        \---StartingScreen
+                StartingScreen.css
+                StartingScreen.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📥 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the repository
 
-## Learn More
+```bash
+git clone https://github.com/SebastianKostrz/TicTacToe.git
+cd TicTacToe
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+### 3. Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+Then open your browser at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📦 Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run build
+```
 
-### Advanced Configuration
+Creates an optimized build in the `/build` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 👤 About Me
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Sebastian Kostrzewa**  
+Junior Frontend Developer  
+[GitHub](https://github.com/SebastianKostrz)
 
-### `npm run build` fails to minify
+> Passionate about clean code, strong UI/UX, and constantly learning.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
